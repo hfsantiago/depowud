@@ -416,12 +416,12 @@
   <!-- ===== TRANSPARENCIA Y LEGALIDAD ===== -->
   <section class="section legal" id="legal" aria-label="Compra legal">
     <div class="legal-bg">
-      <img src="assets/img/legal.jpg" alt="Bosque certificado sostenible" loading="lazy" />
+      <img src="assets/img/seccion sostenibilidad.png" alt="Bosque certificado sostenible" loading="lazy" />
     </div>
     <div class="legal-overlay"></div>
     <div class="container legal-content">
       <p class="section-kicker light">Sostenibilidad</p>
-      <h2 class="section-title light reveal">Legalidad Garantizada en Cada Carga de Madera</h2>
+      <h2 class="section-title light reveal"><span class="highlight-gradient-anim-light">Legalidad</span> Garantizada en Cada Carga de Madera</h2>
       <p class="section-sub light reveal">
         Elimine riesgos en su cadena de suministro trabajando con un aliado que documenta el origen y tratamiento de cada producto. Nuestra operación cumple estrictamente con la normativa local vigente para su total tranquilidad.
       </p>
@@ -432,7 +432,7 @@
           </div>
           <h3>Cumplimiento Normativo</h3>
           <p>Inscritos ante Barranquilla Verde como comercializadores legales, cumpliendo todas las disposiciones ambientales locales de control y vigilancia.</p>
-          <span class="legal-sello">Operación formal y vigilada</span>
+          <span class="legal-sello" style="margin-top:35px;padding-left:11px;padding-right:11px;">Operación formal y vigilada</span>
         </div>
         <div class="legal-card reveal">
           <div class="legal-icon">
@@ -440,7 +440,7 @@
           </div>
           <h3>Salvoconductos de Movilización</h3>
           <p>Cada despacho de madera viene acompañado del salvoconducto oficial que acredita su origen legal desde el proveedor.</p>
-          <span class="legal-sello">Trazabilidad total de origen</span>
+          <span class="legal-sello" style="padding-left:11px;padding-right:11px;">Trazabilidad total de origen</span>
         </div>
         <div class="legal-card reveal">
           <div class="legal-icon">
@@ -448,7 +448,7 @@
           </div>
           <h3>Aprovechamiento como Biomasa</h3>
           <p>El material residual de nuestro procesamiento se recircula como combustible industrial, reduciendo el desperdicio y el impacto ambiental de la operación.</p>
-          <span class="legal-sello">Cero desperdicio</span>
+          <span class="legal-sello" style="margin-top:57px;">Cero desperdicio</span>
         </div>
         <div class="legal-card reveal">
           <div class="legal-icon">
@@ -456,7 +456,7 @@
           </div>
           <h3>Certificación ICA NIMF-15</h3>
           <p>Habilitación oficial para el tratamiento térmico de embalajes destinados a exportación. Su carga no enfrentará bloqueos fitosanitarios en frontera.</p>
-          <span class="legal-sello">Cumplimiento fitosanitario</span>
+          <span class="legal-sello" style="margin-top:85px;">Cumplimiento fitosanitario</span>
         </div>
       </div>
       <div class="legal-cierre reveal">
@@ -473,7 +473,7 @@
   <section class="section servicios" id="servicios" aria-label="Servicios">
     <div class="container">
       <p class="section-kicker">Lo que hacemos</p>
-      <h2 class="section-title reveal">Servicios de procesamiento de madera en Barranquilla</h2>
+      <h2 class="section-title reveal"><span class="highlight-gradient-anim">Servicios</span> de procesamiento de madera en Barranquilla</h2>
       <p class="section-sub reveal">
         Ofrecemos servicios industriales de madera con precisión técnica y gestión eficiente para la industria y constructoras en la región Caribe. Optimizamos sus procesos de carga y obra mediante servicios especializados que reducen sus costos operativos.
       </p>
@@ -627,7 +627,7 @@
         </div>
         <div class="acerca-text">
           <p class="section-kicker">Quiénes Somos · Sostenibilidad</p>
-          <h2 class="section-title reveal">Compromiso con la madera sostenible</h2>
+          <h2 class="section-title reveal"><span class="highlight-gradient-anim">Compromiso</span> con la madera sostenible</h2>
           <p class="reveal">
             Deepowud es una empresa especializada en la comercialización y procesamiento
             de madera dimensionada, con un firme compromiso hacia la sostenibilidad y la
@@ -666,7 +666,7 @@
     <div class="clientes-overlay"></div>
     <div class="container clientes-content">
       <p class="section-kicker light">A quiénes servimos</p>
-      <h2 class="section-title light reveal">Clientes que confían en Depowüd</h2>
+      <h2 class="section-title light reveal"><span class="highlight-gradient-anim-light">Clientes</span> que confían en Depowüd</h2>
       <div class="clientes-grid">
 
         <div class="cliente-card reveal">
@@ -927,12 +927,7 @@
       <button class="brochure-close" id="closePoliticaModal" aria-label="Cerrar">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
-      <object id="politicaFrame" data="" type="application/pdf" width="100%" height="100%">
-        <p style="color:#fff;padding:2rem;text-align:center;">
-          Tu navegador no puede mostrar el PDF.
-          <a id="politicaDownload" href="" download style="color:#C9952A;">Haz clic aquí para descargarlo</a>.
-        </p>
-      </object>
+      <iframe id="politicaFrame" src="" title="Política de Datos Depowüd" width="100%" height="100%" style="border:none;"></iframe>
     </div>
   </div>
   <div class="brochure-backdrop" id="politicaBackdrop"></div>
@@ -948,9 +943,7 @@
 
       function openModal() {
         if (!loaded) {
-          frame.setAttribute('data', 'assets/docs/politica-datos-depowud.pdf');
-          var dl = document.getElementById('politicaDownload');
-          if (dl) dl.href = 'assets/docs/politica-datos-depowud.pdf';
+          frame.setAttribute('src', 'assets/docs/politica-datos-depowud.pdf#toolbar=0&navpanes=0&scrollbar=0');
           loaded = true;
         }
         modal.classList.add('open');

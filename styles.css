@@ -727,7 +727,7 @@ ul, ol { list-style: none; }
 }
 .legal-content .section-kicker { text-align: center; }
 .legal-content .section-title { margin-bottom: 1rem; text-align: center; }
-.legal-content .section-sub  { margin-bottom: 3rem; text-align: center; }
+.legal-content .section-sub  { margin-bottom: 3rem; text-align: center; max-width: 100%; }
 
 .legal-grid {
   display: grid;
@@ -749,6 +749,8 @@ ul, ol { list-style: none; }
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: background .3s, transform .3s var(--ease), box-shadow .3s;
+  display: flex;
+  flex-direction: column;
 }
 .legal-card:hover {
   background: rgba(255,255,255,.18);
@@ -783,7 +785,10 @@ ul, ol { list-style: none; }
 
 .legal-sello {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: auto;
+  align-self: center;
+  text-align: center;
+  padding-top: 1rem;
   padding: .3rem .85rem;
   background: rgba(201,149,42,.2);
   border: 1px solid rgba(201,149,42,.5);
@@ -932,6 +937,21 @@ ul, ol { list-style: none; }
   color: transparent;
   animation: shimmer-lr 7s linear infinite;
   position: relative;
+}
+.highlight-gradient-anim-light {
+  background: linear-gradient(90deg,
+    #ffffff 0%,
+    #ffffff 30%,
+    #C9952A 50%,
+    #ffffff 70%,
+    #ffffff 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shimmer-lr 7s linear infinite;
 }
 
 /* Layout productos: grupos izquierda + imagen derecha */
