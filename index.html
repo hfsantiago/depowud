@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Depowüd — Madera Legal y Certificada</title>
+  <meta name="description" content="Deepowud ofrece servicios para madera y venta de madera dimensionada con respaldo fitosanitario certificado por el ICA." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=20260830" />
+
+  <!-- Smartsupp Live Chat script -->
+  <script type="text/javascript">
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = '1b61cdd010cd5aa212b87a354170b27145da5b91';
+  window.smartsupp||(function(d) {
+    var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+    s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+    c.type='text/javascript';c.charset='utf-8';c.async=true;
+    c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+  })(document);
+  </script>
+  <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="assets/img/logo-nav.svg" alt="Deepowud" height="44" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+
+        <li class="nav-item-dropdown">
+          <button class="nav-link dropdown-trigger" id="dropdownTrigger" aria-haspopup="true" aria-expanded="false">
+            Empresa <svg class="arrow-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="dropdown-menu" id="dropdownMenu" role="list">
+            <li>
+              <a href="#empresa" class="dropdown-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                Quiénes Somos
+              </a>
+            </li>
+            <li>
+              <a href="#legal" class="dropdown-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.5 19 4c1.3 8-3 13-8 16z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 11 12 13 9"/></svg>
+                Sostenibilidad
+              </a>
+            </li>
+            <li>
+              <button class="dropdown-item" id="openBrochureBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                Brochure
+              </button>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#productos" class="nav-link">Productos</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- CTAs fijos esquina superior derecha -->
+  <div class="corner-ctas">
+    <a href="https://wa.me/573116656025" class="nav-cta-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+      WhatsApp
+    </a>
+    <a href="#contactForm" class="nav-cta-quote">
+      Solicitar cotización
+    </a>
+  </div>
+
+  <!-- ===== MODAL BROCHURE ===== -->
+  <div class="modal-overlay" id="brochureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span id="modalTitle">Brochure Deepowud</span>
+        <div class="modal-actions">
+          <a href="assets/docs/brochure.pdf" download="Brochure_Deepowud.pdf" class="btn-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar PDF
+          </a>
+          <button class="modal-close" id="closeModal" aria-label="Cerrar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe id="brochureFrame" src="" title="Brochure Deepowud" class="pdf-viewer"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio" aria-label="Inicio">
+    <div class="hero-img">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/img/hero_video-2.webm" type="video/webm" />
+        <img src="assets/img/hero-v7.jpg" alt="Bosque de pinos Deepowud" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Estibas y Maderas Depowüd · Madera con propósito</p>
+      <h1 class="hero-title">
+        Estibas y Pallets de Madera Certificados en Barranquilla.<br>
+        <em>Calidad <span class="word-wrapper"><span class="word-cycle" id="wordCycle" aria-live="polite">Confiable.</span></span></em>
+      </h1>
+      <p class="hero-sub">
+        <strong>Resuelve tu logística de carga con nuestras estibas NIMF-15 y abastece tus obras con maderas de alta resistencia. Somos el aliado estratégico en Barranquilla para empresas industriales y constructoras que exigen madera 100% legal.</strong>
+      </p>
+      <div class="hero-ctas">
+        <a href="#productos" class="btn-primary">Ver catálogo</a>
+        <a href="#contacto" class="btn-ghost">Solicitar cotización</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Conoce más</span>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTOS ===== -->
+  <section class="section productos" id="productos" aria-label="Productos">
+    <div class="container">
+      <p class="section-kicker light reveal reveal-blur">Lo que ofrecemos</p>
+      <h2 class="section-title light reveal reveal-blur"><span class="highlight-gradient-anim">Productos:</span> Madera para la industria y construcción</h2>
+      <p class="section-sub light reveal reveal-blur">
+        Suministramos madera legal, estibas y embalajes certificados en Barranquilla y la región Caribe. Contamos con el inventario y la capacidad técnica para abastecer sus proyectos de construcción e industria.
+      </p>
+      <!-- Layout: grupos izquierda + imagen derecha -->
+      <div class="products-layout">
+      <div class="products-left-groups">
+
+      <!-- GRUPO 1: Embalaje Industrial -->
+      <div class="product-group reveal">
+        <div class="product-group-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <h3>Embalaje Industrial</h3>
+        </div>
+        <div class="products-grid">
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Estibas y Pallets de madera" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="5"/><rect x="2" y="10" width="20" height="5"/><rect x="2" y="17" width="20" height="5"/></svg>
+              </div>
+              <h3>Estibas / Pallets</h3>
+              <p>Suministramos estibas de madera en Barranquilla bajo normativa NIMF-15 para logística y exportación. Disponemos de opciones nuevas y reparadas fabricadas en especies como Melina, Campano, Moho y Pino.</p>
+              <p class="product-diferenciador">Garantizamos cumplimiento técnico inmediato para agilizar sus despachos internacionales.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Cotizar estibas NIMF-15</a>
+                <button class="product-cta product-cta-outline especies-toggle" aria-expanded="false" data-target="especiesEstibas">
+                  Ver especies disponibles
+                  <svg class="especies-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+              <div class="especies-acordeon" id="especiesEstibas" hidden>
+                <div class="especie-card">
+                  <div class="especie-header">
+                    <span class="especie-nombre">Melina</span>
+                    <span class="especie-sci">Gmelina arborea</span>
+                  </div>
+                  <ul class="especie-datos">
+                    <li><span>Densidad</span> 450–530 kg/m³</li>
+                    <li><span>Color</span> Amarillo crema a gris claro</li>
+                    <li><span>Trabajabilidad</span> Muy fácil</li>
+                    <li><span>Secado</span> Rápido y uniforme</li>
+                    <li><span>Usos</span> Estibas y embalajes ligeros</li>
+                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
+                  </ul>
+                </div>
+                <div class="especie-card">
+                  <div class="especie-header">
+                    <span class="especie-nombre">Campano / Saman</span>
+                    <span class="especie-sci">Samanea saman</span>
+                  </div>
+                  <ul class="especie-datos">
+                    <li><span>Densidad</span> 550–650 kg/m³</li>
+                    <li><span>Color</span> Castaño oscuro con vetas pronunciadas</li>
+                    <li><span>Trabajabilidad</span> Media</li>
+                    <li><span>Secado</span> Moderado</li>
+                    <li><span>Durabilidad</span> Buena resistencia a hongos e insectos</li>
+                    <li><span>Usos</span> Estibas, chazas, construcción general</li>
+                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
+                  </ul>
+                </div>
+                <div class="especie-card">
+                  <div class="especie-header">
+                    <span class="especie-nombre">Moho / Vara de humo</span>
+                    <span class="especie-sci">Cordia alliodora</span>
+                  </div>
+                  <ul class="especie-datos">
+                    <li><span>Densidad</span> 500–580 kg/m³</li>
+                    <li><span>Color</span> Castaño amarillento a rosado</li>
+                    <li><span>Trabajabilidad</span> Fácil</li>
+                    <li><span>Secado</span> Moderado</li>
+                    <li><span>Durabilidad</span> Media</li>
+                    <li><span>Usos</span> Estibas, encofrados, cerramientos</li>
+                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
+                  </ul>
+                </div>
+                <div class="especie-card">
+                  <div class="especie-header">
+                    <span class="especie-nombre">Pino Ocarpa</span>
+                    <span class="especie-sci">Pinus oocarpa</span>
+                  </div>
+                  <ul class="especie-datos">
+                    <li><span>Densidad</span> 550–650 kg/m³</li>
+                    <li><span>Color</span> Amarillo pálido a blanco cremoso</li>
+                    <li><span>Trabajabilidad</span> Muy fácil</li>
+                    <li><span>Secado</span> Rápido y uniforme</li>
+                    <li><span>Durabilidad</span> Media</li>
+                    <li><span>Usos</span> Estibas para exportación, embalajes ligeros</li>
+                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Huacales de madera" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              </div>
+              <h3>Huacales</h3>
+              <p>Diseñamos huacales para exportación en Colombia a medida, cumpliendo estrictamente con la certificación NIMF-15. Ideales para proteger mercancía pesada o voluminosa durante el transporte terrestre o marítimo.</p>
+              <p class="product-diferenciador">Fabricación a medida según las dimensiones y peso exacto de su carga.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Solicitar diseño de huacal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRUPO 2: Maderas Construcción -->
+      <div class="product-group reveal">
+        <div class="product-group-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22V12L12 2l10 10v10H2z"/><rect x="9" y="15" width="6" height="7"/></svg>
+          <h3>Maderas Construcción</h3>
+        </div>
+        <!-- Tarjetas generales del grupo -->
+        <div class="products-grid">
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Chazas y Camillas" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18"/></svg>
+              </div>
+              <h3>Chazas / Camillas</h3>
+              <p>Elementos de formaleta para obra civil, estándar 140×70 cm en listón de Campano. Producto esencial para construcción en Barranquilla que garantiza durabilidad y resistencia en el vaciado.</p>
+              <p class="product-diferenciador">Disponibilidad constante de inventario para no frenar el ritmo de su obra.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Cotizar chazas para obra</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/species.jpg" alt="Maderas Rollizas" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <h3>Maderas Rollizas</h3>
+              <p>Eucalipto en diámetros de 3" a 10" y longitudes de 3 y 6 metros para usos industriales y estructurales. Resistente, económica y de rápida disponibilidad para proyectos de infraestructura y construcción rural.</p>
+              <p class="product-diferenciador">Eucalipto de rápida disponibilidad en stock permanente en Barranquilla.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Consultar disponibilidad de rollizos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div><!-- /products-left-groups -->
+
+      <!-- Slot imagen derecha -->
+      <div class="products-image-slot reveal">
+        <div class="products-image-3d">
+          <img src="assets/img/chaza.jpg" alt="Chazas de madera Depowüd" loading="lazy" />
+        </div>
+      </div>
+
+      </div><!-- /products-layout -->
+
+      <!-- Sub-categoría: Maderas Dimensionadas (ancho completo) -->
+      <div class="product-subgroup reveal">
+        <div class="product-subgroup-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          <h4>Maderas Dimensionadas</h4>
+        </div>
+        <div class="products-grid">
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Línea Práctica" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              </div>
+              <h3>Línea Práctica</h3>
+              <p>Madera común y Cativo para obras temporales o cerramientos que requieren una inversión optimizada. Solución técnica ideal para usos de corto plazo en construcción.</p>
+              <p class="product-diferenciador">Entrega inmediata para cubrir necesidades operativas de última hora.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Cotizar línea práctica</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Línea Constructiva" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
+              </div>
+              <h3>Línea Constructiva</h3>
+              <p>Madera dimensionada de mediano plazo en especies como Campano, Moho, Pino, Caracolí, Mazábalo, Pantano y Abarcón. Diseñada para soportar las exigencias de proyectos de construcción estables.</p>
+              <p class="product-diferenciador">Cortes precisos según sus planos para reducir el desperdicio en obra.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Cotizar línea constructiva</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Línea Estructural" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M6 20V10M18 20V10M12 20V4M2 10h20"/></svg>
+              </div>
+              <h3>Línea Estructural</h3>
+              <p>Maderas de alta resistencia como Choiba, Amargo, Abarco y Teka para cargas permanentes en estructuras de largo plazo. Máxima durabilidad técnica para proyectos de ingeniería y arquitectura.</p>
+              <p class="product-diferenciador">Suministro de madera con alta densidad apta para exposición y carga constante.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Cotizar línea estructural</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Línea Moldurada" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 10h16v4H4zM4 16h16v4H4z"/></svg>
+              </div>
+              <h3>Línea Moldurada</h3>
+              <p>Acabados premium en Amargo, Campano, Teka y Choiba para pisos y terrazas. Madera seca con humedad controlada (KD 10%-16%) lista para instalación inmediata en su proyecto.</p>
+              <p class="product-diferenciador">Perfilado de precisión para una instalación impecable en su proyecto.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Cotizar madera moldurada</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRUPO 3: Subproductos -->
+      <div class="product-group reveal">
+        <div class="product-group-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 00-7.35 16.83L12 22l7.35-3.17A10 10 0 0012 2z"/></svg>
+          <h3>Subproductos</h3>
+        </div>
+        <div class="products-grid">
+          <div class="product-card reveal reveal-scale">
+            <div class="product-img">
+              <img src="assets/img/products.jpg" alt="Fogata y Aserín" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <div class="product-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 6-8 8-8 14a8 8 0 0016 0c0-6-8-8-8-14z"/><path d="M12 12c0 3-3 4-3 7a3 3 0 006 0c0-3-3-4-3-7z"/></svg>
+              </div>
+              <h3>Fogata & Aserín</h3>
+              <p>Leños de 30 cm y aserín en bultos de 16 kg para asaderos, industria avícola y procesos industriales. Aprovechamiento técnico de subproductos derivados de nuestro procesamiento de madera.</p>
+              <p class="product-diferenciador">Disponible seco bajo solicitud previa de secado — listo para uso inmediato en combustión o camas avícolas.</p>
+              <div class="product-ctas">
+                <a href="#contactForm" class="product-cta">Consultar precio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRANSPARENCIA Y LEGALIDAD ===== -->
+  <section class="section legal" id="legal" aria-label="Compra legal">
+    <div class="legal-bg">
+      <img src="assets/img/legal.jpg" alt="Bosque certificado sostenible" loading="lazy" />
+    </div>
+    <div class="legal-overlay"></div>
+    <div class="container legal-content">
+      <p class="section-kicker light">Sostenibilidad</p>
+      <h2 class="section-title light reveal">Legalidad Garantizada en Cada Carga de Madera</h2>
+      <p class="section-sub light reveal">
+        Elimine riesgos en su cadena de suministro trabajando con un aliado que documenta el origen y tratamiento de cada producto. Nuestra operación cumple estrictamente con la normativa local vigente para su total tranquilidad.
+      </p>
+      <div class="legal-grid legal-grid-4">
+        <div class="legal-card reveal">
+          <div class="legal-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Cumplimiento Normativo</h3>
+          <p>Inscritos ante Barranquilla Verde como comercializadores legales, cumpliendo todas las disposiciones ambientales locales de control y vigilancia.</p>
+          <span class="legal-sello">Operación formal y vigilada</span>
+        </div>
+        <div class="legal-card reveal">
+          <div class="legal-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Salvoconductos de Movilización</h3>
+          <p>Cada despacho de madera viene acompañado del salvoconducto oficial que acredita su origen legal desde el proveedor.</p>
+          <span class="legal-sello">Trazabilidad total de origen</span>
+        </div>
+        <div class="legal-card reveal">
+          <div class="legal-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Aprovechamiento como Biomasa</h3>
+          <p>El material residual de nuestro procesamiento se recircula como combustible industrial, reduciendo el desperdicio y el impacto ambiental de la operación.</p>
+          <span class="legal-sello">Cero desperdicio</span>
+        </div>
+        <div class="legal-card reveal">
+          <div class="legal-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Certificación ICA NIMF-15</h3>
+          <p>Habilitación oficial para el tratamiento térmico de embalajes destinados a exportación. Su carga no enfrentará bloqueos fitosanitarios en frontera.</p>
+          <span class="legal-sello">Cumplimiento fitosanitario</span>
+        </div>
+      </div>
+      <div class="legal-cierre reveal">
+        <p class="legal-cierre-texto">Depowüd opera con respaldo de sostenibilidad y legalidad en cada proceso.</p>
+        <a href="https://wa.me/573116656025?text=Hola%2C%20quisiera%20solicitar%20mayor%20información%20sobre%20la%20legalidad%20y%20certificaciones%20de%20Depowüd." class="legal-cierre-btn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+          Solicitar mayor información
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section servicios" id="servicios" aria-label="Servicios">
+    <div class="container">
+      <p class="section-kicker">Lo que hacemos</p>
+      <h2 class="section-title reveal">Servicios de procesamiento de madera en Barranquilla</h2>
+      <p class="section-sub reveal">
+        Ofrecemos servicios industriales de madera con precisión técnica y gestión eficiente para la industria y constructoras en la región Caribe. Optimizamos sus procesos de carga y obra mediante servicios especializados que reducen sus costos operativos.
+      </p>
+
+      <div class="services-grid-new">
+
+        <!-- 1. Corte a medida -->
+        <div class="srv-card reveal">
+          <div class="srv-icon srv-icon--corte">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+              <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <div class="srv-body">
+            <h3>Corte de Madera a Medida</h3>
+            <p>Ejecutamos cortes longitudinales, transversales, perfilados y con motosierra ajustados a los planos de su proyecto. La precisión dimensional de nuestro equipo garantiza un ensamble rápido y reduce desperdicio de material en obra.</p>
+            <p class="srv-dif">Cortes exactos que aceleran el cronograma de ejecución de su obra.</p>
+            <div class="srv-ctas">
+              <a href="#contactForm" class="srv-btn">Cotizar corte de madera</a>
+              <a href="https://wa.me/573116656025?text=Hola%2C%20me%20interesa%20cotizar%20el%20servicio%20de%20Corte%20de%20Madera%20a%20Medida%20con%20Depow%C3%BCd." class="srv-btn-wa" target="_blank" rel="noopener" aria-label="WhatsApp — Corte de madera">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Secado en Horno -->
+        <div class="srv-card reveal">
+          <div class="srv-icon srv-icon--horno">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+              <path d="M7 8a2 2 0 012-2h6a2 2 0 012 2v3H7V8z"/>
+              <line x1="9" y1="12" x2="9" y2="14"/><line x1="12" y1="12" x2="12" y2="14"/><line x1="15" y1="12" x2="15" y2="14"/>
+            </svg>
+          </div>
+          <div class="srv-body">
+            <h3>Secado en Horno Técnico</h3>
+            <p>Procesamos hasta 10.000 pies de madera con control estricto de humedad (12%-18%) para máxima estabilidad estructural. Evite curvaturas o rajaduras en sus estructuras y acabados con un secado controlado.</p>
+            <p class="srv-dif">Madera lista para instalar sin riesgos de contracción.</p>
+            <div class="srv-ctas">
+              <a href="#contactForm" class="srv-btn">Consultar secado en Horno</a>
+              <a href="https://wa.me/573116656025?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Secado%20en%20Horno%20T%C3%A9cnico%20con%20Depow%C3%BCd." class="srv-btn-wa" target="_blank" rel="noopener" aria-label="WhatsApp — Secado en Horno">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Secado al Aire -->
+        <div class="srv-card reveal">
+          <div class="srv-icon srv-icon--aire">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"/>
+            </svg>
+          </div>
+          <div class="srv-body">
+            <h3>Secado de Madera a la Intemperie</h3>
+            <p>Aplicamos procesos naturales de ventilación controlada para estabilizar la madera de forma eficiente. Esta es la opción más rentable para proyectos que requieren grandes volúmenes optimizando el presupuesto.</p>
+            <p class="srv-dif">Máximo ahorro en proyectos de construcción de gran escala.</p>
+            <div class="srv-ctas">
+              <a href="#contactForm" class="srv-btn">Consultar secado al aire</a>
+              <a href="https://wa.me/573116656025?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Secado%20de%20Madera%20a%20la%20Intemperie%20con%20Depow%C3%BCd." class="srv-btn-wa" target="_blank" rel="noopener" aria-label="WhatsApp — Secado al aire">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Diseño de Embalaje -->
+        <div class="srv-card reveal">
+          <div class="srv-icon srv-icon--embalaje">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <div class="srv-body">
+            <h3>Diseño de Embalaje a Medida</h3>
+            <p>Diseñamos estructuras de huacales y cajas de madera adaptadas específicamente a las dimensiones y peso real de su carga. Optimizamos la configuración del embalaje para garantizar la máxima protección de su mercancía durante el transporte terrestre o marítimo.</p>
+            <p class="srv-dif">Diseño de empaque personalizado que previene daños y optimiza sus costos de flete.</p>
+            <div class="srv-ctas">
+              <a href="#contactForm" class="srv-btn">Solicitar embalaje</a>
+              <a href="https://wa.me/573116656025?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Dise%C3%B1o%20de%20Embalaje%20a%20Medida%20con%20Depow%C3%BCd." class="srv-btn-wa" target="_blank" rel="noopener" aria-label="WhatsApp — Diseño de Embalaje">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Recirculación -->
+        <div class="srv-card reveal">
+          <div class="srv-icon srv-icon--recircula">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"/>
+              <polyline points="23 20 23 14 17 14"/>
+              <path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/>
+            </svg>
+          </div>
+          <div class="srv-body">
+            <h3>Recirculación de Embalajes Industriales</h3>
+            <p>Gestionamos la recogida en su planta o recepción en nuestras instalaciones para reacondicionar estibas y huacales usados. Reinsertamos sus activos en la cadena logística, reduciendo significativamente sus costos de compra anual.</p>
+            <p class="srv-dif">Economía circular aplicada para disminuir gastos logísticos operativos.</p>
+            <div class="srv-ctas">
+              <a href="#contactForm" class="srv-btn">Iniciar proceso de recirculación</a>
+              <a href="https://wa.me/573116656025?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Recirculaci%C3%B3n%20de%20Embalajes%20Industriales%20con%20Depow%C3%BCd." class="srv-btn-wa" target="_blank" rel="noopener" aria-label="WhatsApp — Recirculación">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Reparación -->
+        <div class="srv-card reveal">
+          <div class="srv-icon srv-icon--reparacion">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <div class="srv-body">
+            <h3>Reparación de Estibas y Huacales</h3>
+            <p>Recuperamos la capacidad de carga de sus activos mediante el reemplazo de piezas estructurales dañadas. Extendemos la vida útil de sus embalajes, permitiendo la reutilización inmediata con total seguridad operativa.</p>
+            <p class="srv-dif">Recuperación técnica que maximiza su inversión en embalaje.</p>
+            <div class="srv-ctas">
+              <a href="#contactForm" class="srv-btn">Solicitar reparación de estibas</a>
+              <a href="https://wa.me/573116656025?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Reparaci%C3%B3n%20de%20Estibas%20y%20Huacales%20con%20Depow%C3%BCd." class="srv-btn-wa" target="_blank" rel="noopener" aria-label="WhatsApp — Reparación de estibas">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPRA LEGAL ===== -->
+  <!-- ===== ACERCA DE (Quiénes Somos + Sostenibilidad) ===== -->
+  <section class="section acerca" id="empresa" aria-label="Empresa">
+    <div class="container">
+      <div class="acerca-grid">
+        <div class="acerca-img reveal">
+          <img src="assets/img/about.jpg" alt="Equipo y taller Deepowud" loading="lazy" />
+          <div class="acerca-img-badge">
+            <span class="badge-num">+10</span>
+            <span class="badge-txt">años de experiencia</span>
+          </div>
+        </div>
+        <div class="acerca-text">
+          <p class="section-kicker">Quiénes Somos · Sostenibilidad</p>
+          <h2 class="section-title reveal">Compromiso con la madera sostenible</h2>
+          <p class="reveal">
+            Deepowud es una empresa especializada en la comercialización y procesamiento
+            de madera dimensionada, con un firme compromiso hacia la sostenibilidad y la
+            legalidad forestal. Nuestro equipo cuenta con años de experiencia en la cadena
+            de valor de la madera, garantizando productos de la más alta calidad.
+          </p>
+          <p class="reveal">
+            Trabajamos con especies certificadas y procesos que respetan las normativas
+            ambientales vigentes, aportando valor a nuestros clientes con soluciones
+            integrales en madera para construcción, industria y exportación.
+          </p>
+          <div class="acerca-stats reveal">
+            <div class="stat">
+              <span class="stat-num" data-count-to="10">10</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Años de experiencia</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count-to="50">50</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Clientes satisfechos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count-to="100">100</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Madera legal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTES ===== -->
+  <section class="section clientes" id="clientes" aria-label="Tipos de clientes">
+    <div class="clientes-bg">
+      <img src="assets/img/clients.jpg" alt="Clientes Deepowud" loading="lazy" />
+    </div>
+    <div class="clientes-overlay"></div>
+    <div class="container clientes-content">
+      <p class="section-kicker light">A quiénes servimos</p>
+      <h2 class="section-title light reveal">Clientes que confían en Depowüd</h2>
+      <div class="clientes-grid">
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3>Manufactura e industria general</h3>
+        </div>
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Alimentos y bebidas</h3>
+        </div>
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Sector químico y petroquímico</h3>
+        </div>
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22V12L12 2l10 10v10H2z"/><rect x="9" y="15" width="6" height="7"/></svg>
+          </div>
+          <h3>Construcción y materiales</h3>
+        </div>
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Comercio exterior y exportaciones</h3>
+        </div>
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Logística y distribución</h3>
+        </div>
+
+        <div class="cliente-card reveal">
+          <div class="cliente-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          </div>
+          <h3>Ferreterías y depósitos</h3>
+        </div>
+
+        <!-- Tarjeta CTA -->
+        <div class="cliente-card cliente-card-cta reveal">
+          <p>¿No ves tu sector?</p>
+          <a href="https://wa.me/573116656025?text=Hola%2C%20quisiera%20conocer%20si%20Depow%C3%BCd%20puede%20atender%20mi%20sector." class="cliente-cta-btn" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.117 1.533 5.845L.057 23.428a.5.5 0 00.609.61l5.652-1.483A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.735.979.999-3.645-.235-.374A9.868 9.868 0 012.1 12C2.1 6.534 6.534 2.1 12 2.1c5.466 0 9.9 4.434 9.9 9.9 0 5.466-4.434 9.9-9.9 9.9z"/></svg>
+            Escríbenos
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER / CONTACTO ===== -->
+  <footer class="footer" id="contacto" aria-label="Contacto y pie de página">
+    <div class="container footer-grid">
+
+      <div class="footer-info">
+        <img src="assets/img/logo.svg" alt="Deepowud" class="footer-logo" height="48" />
+        <p class="footer-desc">
+          Madera legal, dimensionada y certificada para construcción,
+          exportación e industria. Tu socio confiable en madera.
+        </p>
+        <div class="footer-social">
+          <a href="https://wa.me/573116656025" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Deepowud" class="social-link social-wa">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/deepowud" target="_blank" rel="noopener noreferrer" aria-label="Facebook Deepowud" class="social-link social-fb">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/deepowud" target="_blank" rel="noopener noreferrer" aria-label="Instagram Deepowud" class="social-link social-ig">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+        <p class="footer-contact-info">
+          <a href="mailto:contacto@deepowud.com">contacto@deepowud.com</a>
+        </p>
+      </div>
+
+      <div class="footer-form-wrap">
+        <h3 class="footer-form-title">Cotización</h3>
+        <p class="footer-form-sub">Cuéntanos qué necesitas y te respondemos a la brevedad.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+
+          <!-- 1. Nombre completo -->
+          <div class="form-group">
+            <label for="fname">Nombre completo *</label>
+            <input type="text" id="fname" name="name" required placeholder="Ej. Juan Pérez" autocomplete="name" />
+          </div>
+
+          <!-- 2. Empresa -->
+          <div class="form-group">
+            <label for="fempresa">Empresa</label>
+            <input type="text" id="fempresa" name="empresa" placeholder="Nombre de tu empresa" />
+          </div>
+
+          <!-- 3 & 4. Correo / Teléfono -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="femail">Correo electrónico *</label>
+              <input type="email" id="femail" name="email" required placeholder="nombre@empresa.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="fphone" name="phone" required placeholder="+57 300 000 0000" autocomplete="tel" />
+            </div>
+          </div>
+
+          <!-- 5. ¿Qué necesitas? -->
+          <div class="form-group">
+            <label>¿Qué necesitas? *</label>
+            <div class="chips-group" id="chipsGroup" role="group" aria-label="Selecciona una o varias opciones">
+              <button type="button" class="chip" data-value="Estibas / Pallets">Estibas / Pallets</button>
+              <button type="button" class="chip" data-value="Huacales">Huacales</button>
+              <button type="button" class="chip" data-value="Chazas">Chazas</button>
+              <button type="button" class="chip" data-value="Madera dimensionada">Madera dimensionada</button>
+              <button type="button" class="chip" data-value="Madera rolliza">Madera rolliza</button>
+              <button type="button" class="chip" data-value="Servicios (corte, secado, embalaje)">Servicios</button>
+              <button type="button" class="chip" data-value="Otro">Otro</button>
+            </div>
+            <input type="hidden" id="fproductos" name="productos" />
+            <small class="chips-hint">Puedes seleccionar más de una opción</small>
+            <p class="field-error" id="chipsError" style="display:none">Selecciona al menos una opción.</p>
+          </div>
+
+          <!-- 6. Cantidad estimada -->
+          <div class="form-group">
+            <label for="fcantidad">Cantidad estimada</label>
+            <input type="text" id="fcantidad" name="cantidad" placeholder="Ej. 50 unidades/mes" />
+          </div>
+
+          <!-- 7. Mensaje -->
+          <div class="form-group">
+            <label for="fmsg">Mensaje *</label>
+            <textarea id="fmsg" name="message" required rows="4" placeholder="Cuéntanos los detalles de tu solicitud"></textarea>
+          </div>
+
+          <!-- 8. Checkbox política -->
+          <div class="form-check">
+            <input type="checkbox" id="fdatos" name="datos" />
+            <label for="fdatos">Acepto la <button type="button" class="policy-link" id="openPoliticaFromForm">Política de Tratamiento de Datos Personales</button></label>
+          </div>
+          <p class="field-error" id="policyError" style="display:none">Debes aceptar la Política de Tratamiento de Datos para continuar.</p>
+
+          <button type="submit" class="btn-primary btn-submit" id="submitBtn" disabled>
+            <span class="btn-text">Enviar solicitud</span>
+            <span class="btn-sending" style="display:none">Enviando…</span>
+          </button>
+          <p class="form-success" id="formSuccess" style="display:none">
+            ✅ ¡Solicitud enviada! Te responderemos a la brevedad.
+          </p>
+          <p class="form-error" id="formError" style="display:none">
+            ❌ Error al enviar. Intenta de nuevo o escríbenos directamente.
+          </p>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Deepowud. Todos los derechos reservados.</p>
+        <p><button id="openPoliticaBtn" class="footer-link-btn">Política de Datos</button></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Brochure -->
+  <div class="brochure-modal" id="brochureModal" role="dialog" aria-modal="true" aria-label="Brochure Depowüd">
+    <div class="brochure-modal-inner">
+      <button class="brochure-close" id="closeModal" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <object id="brochureFrame" data="" type="application/pdf" width="100%" height="100%">
+        <p style="color:#fff;padding:2rem;text-align:center;">
+          Tu navegador no puede mostrar el PDF.
+          <a id="brochureDownload" href="" download style="color:#C9952A;">Haz clic aquí para descargarlo</a>.
+        </p>
+      </object>
+    </div>
+  </div>
+  <div class="brochure-backdrop" id="modalBackdrop"></div>
+
+  <!-- Cotización Flotante -->
+  <a href="#contactForm" class="quote-float" aria-label="Solicitar cotización">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+  </a>
+
+
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="main.js?v=20260518"></script>
+  <script>
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('.especies-toggle');
+      if (!btn) return;
+      var target = document.getElementById(btn.dataset.target);
+      if (!target) return;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      target.hidden = expanded;
+    });
+  </script>
+
+  <script>
+    (function() {
+      var openBtn   = document.getElementById('openBrochureBtn');
+      var modal     = document.getElementById('brochureModal');
+      var backdrop  = document.getElementById('modalBackdrop');
+      var closeBtn  = document.getElementById('closeModal');
+      var frame     = document.getElementById('brochureFrame');
+      var loaded    = false;
+
+      function openModal() {
+        if (!loaded) {
+          frame.setAttribute('data', 'assets/docs/brochure-depowud.pdf');
+          var dl = document.getElementById('brochureDownload');
+          if (dl) dl.href = 'assets/docs/brochure-depowud.pdf';
+          loaded = true;
+        }
+        modal.classList.add('open');
+        backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        var dd = document.getElementById('dropdownTrigger');
+        if (dd) dd.closest('.nav-item-dropdown').classList.remove('open');
+      }
+
+      function closeModal() {
+        modal.classList.remove('open');
+        backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn)  openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (backdrop) backdrop.addEventListener('click', closeModal);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
+
+  <!-- Modal Política de Datos -->
+  <div class="brochure-modal" id="politicaModal" role="dialog" aria-modal="true" aria-label="Política de Datos">
+    <div class="brochure-modal-inner">
+      <button class="brochure-close" id="closePoliticaModal" aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <object id="politicaFrame" data="" type="application/pdf" width="100%" height="100%">
+        <p style="color:#fff;padding:2rem;text-align:center;">
+          Tu navegador no puede mostrar el PDF.
+          <a id="politicaDownload" href="" download style="color:#C9952A;">Haz clic aquí para descargarlo</a>.
+        </p>
+      </object>
+    </div>
+  </div>
+  <div class="brochure-backdrop" id="politicaBackdrop"></div>
+
+  <script>
+    (function() {
+      var openBtn  = document.getElementById('openPoliticaBtn');
+      var modal    = document.getElementById('politicaModal');
+      var backdrop = document.getElementById('politicaBackdrop');
+      var closeBtn = document.getElementById('closePoliticaModal');
+      var frame    = document.getElementById('politicaFrame');
+      var loaded   = false;
+
+      function openModal() {
+        if (!loaded) {
+          frame.setAttribute('data', 'assets/docs/politica-datos-depowud.pdf');
+          var dl = document.getElementById('politicaDownload');
+          if (dl) dl.href = 'assets/docs/politica-datos-depowud.pdf';
+          loaded = true;
+        }
+        modal.classList.add('open');
+        backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        modal.classList.remove('open');
+        backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      if (openBtn)  openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (backdrop) backdrop.addEventListener('click', closeModal);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
+</body>
+</html>

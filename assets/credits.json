@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "Downtown, Lakeview, Oregon",
+    "creator": "Ken Lund",
+    "creator_url": "https://www.flickr.com/photos/75683070@N00",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/75683070@N00/2581056732",
+    "source": "flickr"
+  },
+  "about": {
+    "src": "assets/img/about.jpg",
+    "title": "Annaberg-Buchholz (Erzgebirge): Holzplastiken der 'Annaberger Weihnachtsgeschichte': Der Silberschmied prüft sein neues Kruzifix.",
+    "creator": "wwwuppertal",
+    "creator_url": "https://www.flickr.com/photos/54788366@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/54788366@N00/53472274169",
+    "source": "flickr"
+  },
+  "legal": {
+    "src": "assets/img/legal.jpg",
+    "title": "Kitabi Tea Factory",
+    "creator": "KingVik Planet",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:KingVik_Planet",
+    "license": "by-sa",
+    "license_version": "4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=131031035",
+    "source": "wikimedia"
+  },
+  "species": {
+    "src": "assets/img/species.jpg",
+    "title": "Pushing the envelope",
+    "creator": "peggyhr",
+    "creator_url": "https://www.flickr.com/photos/11187987@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/11187987@N00/3731651167",
+    "source": "flickr"
+  },
+  "products": {
+    "src": "assets/img/products.jpg",
+    "title": "Day 192: 'Wrapped in plastic'",
+    "creator": "seanmfreese",
+    "creator_url": "https://www.flickr.com/photos/66779558@N02",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/66779558@N02/7547656856",
+    "source": "flickr"
+  },
+  "services": {
+    "src": "assets/img/services.jpg",
+    "title": "20130911-OSEC-LSC-0033",
+    "creator": "USDAgov",
+    "creator_url": "https://www.flickr.com/photos/41284017@N08",
+    "license": "pdm",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/41284017@N08/9726752568",
+    "source": "flickr"
+  },
+  "clients": {
+    "src": "assets/img/clients.jpg",
+    "title": "scaffold_workers",
+    "creator": "dandeluca",
+    "creator_url": "https://www.flickr.com/photos/19257752@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/19257752@N00/2720139047",
+    "source": "flickr"
+  },
+  "hero-v2": {
+    "src": "assets/img/hero-v2.jpg",
+    "title": "Green waves",
+    "creator": "Milos Golubovic",
+    "creator_url": "https://www.flickr.com/photos/98590749@N07",
+    "license": "by-nc-nd",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/98590749@N07/44083299385",
+    "source": "flickr"
+  },
+  "hero-v3": {
+    "src": "assets/img/hero-v3.jpg",
+    "title": "Sun Trees",
+    "creator": "Matt Moloney",
+    "creator_url": "https://mjmolo.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/sun-trees-HKDGFYOZTG",
+    "source": "stocksnap"
+  },
+  "hero-v4": {
+    "src": "assets/img/hero-v4.jpg",
+    "title": "<div class='fn'> Pinesgroove</div>",
+    "creator": "Vasily B",
+    "creator_url": "https://500px.com/vasily_b",
+    "license": "by",
+    "license_version": "3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=72448694",
+    "source": "wikimedia"
+  },
+  "hero-v6": {
+    "src": "assets/img/hero-v6.jpg",
+    "title": "Jacaranda flower #3644",
+    "creator": "Desert Trees",
+    "creator_url": "https://www.flickr.com/photos/128885772@N07",
+    "license": "by-nc-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/128885772@N07/15022564564",
+    "source": "flickr"
+  },
+  "hero-v7": {
+    "src": "assets/img/hero-v7.jpg",
+    "title": "Afternoon sun shines through tree leaves",
+    "creator": "Victor Wong (sfe-co2)",
+    "creator_url": "https://www.flickr.com/photos/97403714@N02",
+    "license": "by-nc-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/97403714@N02/43220222875",
+    "source": "flickr"
+  },
+  "hero-v8": {
+    "src": "assets/img/hero-v8.jpg",
+    "title": "Afternoon sun shines through tree leaves",
+    "creator": "Victor Wong (sfe-co2)",
+    "creator_url": "https://www.flickr.com/photos/97403714@N02",
+    "license": "by-nc-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/97403714@N02/43220222875",
+    "source": "flickr"
+  }
+}

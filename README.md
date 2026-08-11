@@ -1,2 +1,0 @@
-# depowud
-Depowüd_webpage
