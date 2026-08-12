@@ -140,13 +140,45 @@
   <!-- ===== PRODUCTOS ===== -->
   <section class="section productos" id="productos" aria-label="Productos">
     <div class="container">
-      <p class="section-kicker light reveal reveal-blur">Lo que ofrecemos</p>
-      <h2 class="section-title light reveal reveal-blur"><span class="highlight-gradient-anim">Productos:</span> Madera para la industria y construcción</h2>
-      <p class="section-sub light reveal reveal-blur">
-        Suministramos madera legal, estibas y embalajes certificados en Barranquilla y la región Caribe. Contamos con el inventario y la capacidad técnica para abastecer sus proyectos de construcción e industria.
-      </p>
-      <!-- Layout: grupos izquierda + imagen derecha -->
-      <div class="products-layout">
+
+      <!-- Hero: texto izquierda + imagen derecha -->
+      <div class="products-hero-layout">
+        <div class="products-hero-left">
+          <p class="section-kicker light reveal reveal-blur">Lo que ofrecemos</p>
+          <h2 class="section-title light reveal reveal-blur"><span class="highlight-gradient-anim">Productos:</span> Madera para la industria y construcción</h2>
+          <div class="products-divider"></div>
+          <p class="section-sub light reveal reveal-blur">
+            Suministramos madera legal, estibas y embalajes certificados en Barranquilla y la región Caribe. Contamos con el inventario y la capacidad técnica para abastecer sus proyectos de construcción e industria.
+          </p>
+          <div class="products-badges reveal reveal-blur">
+            <div class="products-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Calidad Garantizada</span>
+            </div>
+            <div class="products-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8c-1.5 0-3 .5-3 2s1.5 2 3 2 3 .5 3 2-1.5 2-3 2"/><path d="M12 6v1m0 10v1"/></svg>
+              <span>Madera Sostenible</span>
+            </div>
+            <div class="products-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              <span>Cumplimiento de Normas</span>
+            </div>
+            <div class="products-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <span>Entrega Confiable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot imagen derecha -->
+        <div class="products-image-slot reveal" style="width:420px;height:613.328px;">
+          <div class="products-image-3d">
+            <img src="assets/img/no_BG-3.png" alt="Chazas de madera Depowüd" loading="lazy" style="padding-bottom:80px;" />
+          </div>
+        </div>
+      </div><!-- /products-hero-layout -->
+
+      <!-- Grupos de productos debajo -->
       <div class="products-left-groups">
 
       <!-- GRUPO 1: Embalaje Industrial -->
@@ -156,101 +188,40 @@
           <h3>Embalaje Industrial</h3>
         </div>
         <div class="products-grid">
-          <div class="product-card reveal reveal-scale">
-            <div class="product-img">
-              <img src="assets/img/products.jpg" alt="Estibas y Pallets de madera" loading="lazy" />
+          <!-- Estibas / Pallets -->
+          <div class="pcard reveal reveal-scale">
+            <div class="pcard-img">
+              <img src="assets/img/estibas_pallets.png" alt="Estibas y Pallets de madera" loading="lazy" />
             </div>
-            <div class="product-info">
-              <div class="product-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="5"/><rect x="2" y="10" width="20" height="5"/><rect x="2" y="17" width="20" height="5"/></svg>
+            <div class="pcard-body">
+              <div class="pcard-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="5"/><rect x="2" y="10" width="20" height="5"/><rect x="2" y="17" width="20" height="5"/></svg>
               </div>
-              <h3>Estibas / Pallets</h3>
-              <p>Suministramos estibas de madera en Barranquilla bajo normativa NIMF-15 para logística y exportación. Disponemos de opciones nuevas y reparadas fabricadas en especies como Melina, Campano, Moho y Pino.</p>
-              <p class="product-diferenciador">Garantizamos cumplimiento técnico inmediato para agilizar sus despachos internacionales.</p>
-              <div class="product-ctas">
-                <a href="#contactForm" class="product-cta">Cotizar estibas NIMF-15</a>
-                <button class="product-cta product-cta-outline especies-toggle" aria-expanded="false" data-target="especiesEstibas">
-                  Ver especies disponibles
-                  <svg class="especies-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-              </div>
-              <div class="especies-acordeon" id="especiesEstibas" hidden>
-                <div class="especie-card">
-                  <div class="especie-header">
-                    <span class="especie-nombre">Melina</span>
-                    <span class="especie-sci">Gmelina arborea</span>
-                  </div>
-                  <ul class="especie-datos">
-                    <li><span>Densidad</span> 450–530 kg/m³</li>
-                    <li><span>Color</span> Amarillo crema a gris claro</li>
-                    <li><span>Trabajabilidad</span> Muy fácil</li>
-                    <li><span>Secado</span> Rápido y uniforme</li>
-                    <li><span>Usos</span> Estibas y embalajes ligeros</li>
-                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
-                  </ul>
-                </div>
-                <div class="especie-card">
-                  <div class="especie-header">
-                    <span class="especie-nombre">Campano / Saman</span>
-                    <span class="especie-sci">Samanea saman</span>
-                  </div>
-                  <ul class="especie-datos">
-                    <li><span>Densidad</span> 550–650 kg/m³</li>
-                    <li><span>Color</span> Castaño oscuro con vetas pronunciadas</li>
-                    <li><span>Trabajabilidad</span> Media</li>
-                    <li><span>Secado</span> Moderado</li>
-                    <li><span>Durabilidad</span> Buena resistencia a hongos e insectos</li>
-                    <li><span>Usos</span> Estibas, chazas, construcción general</li>
-                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
-                  </ul>
-                </div>
-                <div class="especie-card">
-                  <div class="especie-header">
-                    <span class="especie-nombre">Moho / Vara de humo</span>
-                    <span class="especie-sci">Cordia alliodora</span>
-                  </div>
-                  <ul class="especie-datos">
-                    <li><span>Densidad</span> 500–580 kg/m³</li>
-                    <li><span>Color</span> Castaño amarillento a rosado</li>
-                    <li><span>Trabajabilidad</span> Fácil</li>
-                    <li><span>Secado</span> Moderado</li>
-                    <li><span>Durabilidad</span> Media</li>
-                    <li><span>Usos</span> Estibas, encofrados, cerramientos</li>
-                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
-                  </ul>
-                </div>
-                <div class="especie-card">
-                  <div class="especie-header">
-                    <span class="especie-nombre">Pino Ocarpa</span>
-                    <span class="especie-sci">Pinus oocarpa</span>
-                  </div>
-                  <ul class="especie-datos">
-                    <li><span>Densidad</span> 550–650 kg/m³</li>
-                    <li><span>Color</span> Amarillo pálido a blanco cremoso</li>
-                    <li><span>Trabajabilidad</span> Muy fácil</li>
-                    <li><span>Secado</span> Rápido y uniforme</li>
-                    <li><span>Durabilidad</span> Media</li>
-                    <li><span>Usos</span> Estibas para exportación, embalajes ligeros</li>
-                    <li><span>Humedad</span> Verde / Seca bajo solicitud (18–25%)</li>
-                  </ul>
-                </div>
-              </div>
+              <h3 class="pcard-title">Estibas / Pallets</h3>
+              <p class="pcard-desc">Suministramos estibas de madera en Barranquilla bajo normativa NIMF-15 para logística y exportación. Disponemos de opciones nuevas y reparadas fabricadas en especies como Melina, Campano, Moho y Pino.</p>
+              <ul class="pcard-features">
+                <li>Normativa NIMF-15 certificada</li>
+                <li>Opciones nuevas y reparadas</li>
+                <li>Múltiples especies disponibles</li>
+              </ul>
             </div>
           </div>
-          <div class="product-card reveal reveal-scale">
-            <div class="product-img">
+          <!-- Huacales -->
+          <div class="pcard reveal reveal-scale">
+            <div class="pcard-img">
               <img src="assets/img/products.jpg" alt="Huacales de madera" loading="lazy" />
             </div>
-            <div class="product-info">
-              <div class="product-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            <div class="pcard-body">
+              <div class="pcard-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
               </div>
-              <h3>Huacales</h3>
-              <p>Diseñamos huacales para exportación en Colombia a medida, cumpliendo estrictamente con la certificación NIMF-15. Ideales para proteger mercancía pesada o voluminosa durante el transporte terrestre o marítimo.</p>
-              <p class="product-diferenciador">Fabricación a medida según las dimensiones y peso exacto de su carga.</p>
-              <div class="product-ctas">
-                <a href="#contactForm" class="product-cta">Solicitar diseño de huacal</a>
-              </div>
+              <h3 class="pcard-title">Huacales</h3>
+              <p class="pcard-desc">Diseñamos huacales para exportación en Colombia a medida, cumpliendo estrictamente con la certificación NIMF-15. Ideales para proteger mercancía pesada o voluminosa durante el transporte terrestre o marítimo.</p>
+              <ul class="pcard-features">
+                <li>Fabricación a medida</li>
+                <li>Certificación NIMF-15</li>
+                <li>Transporte terrestre y marítimo</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -301,15 +272,6 @@
       </div>
 
       </div><!-- /products-left-groups -->
-
-      <!-- Slot imagen derecha -->
-      <div class="products-image-slot reveal" style="width:420px;height:613.328px;margin-bottom:80px;">
-        <div class="products-image-3d">
-          <img src="assets/img/no_BG-2.png" alt="Chazas de madera Depowüd" loading="lazy" />
-        </div>
-      </div>
-
-      </div><!-- /products-layout -->
 
       <!-- Sub-categoría: Maderas Dimensionadas (ancho completo) -->
       <div class="product-subgroup reveal">
