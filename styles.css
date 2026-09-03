@@ -899,6 +899,7 @@ ul, ol { list-style: none; }
   font-size: .92rem;
   color: rgba(255,255,255,.82);
   line-height: 1.65;
+  flex: 1;
 }
 
 .legal-sello {
