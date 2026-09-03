@@ -38,7 +38,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
-  font-size: 16px;
+  /* Escala el rem base: 13px en 1280px → 16px en 1920px */
+  font-size: clamp(13px, 0.833vw + 2.33px, 16px);
 }
 
 body {
@@ -213,14 +214,11 @@ ul, ol { list-style: none; }
   margin-left: auto;
 }
 
-.corner-ctas {
-  position: fixed;
-  top: 1rem;
-  right: 1.25rem;
-  z-index: 1100;
+.nav-ctas {
   display: flex;
   align-items: center;
   gap: .5rem;
+  margin-left: auto;
 }
 
 .nav-cta-wa,
@@ -2297,7 +2295,7 @@ ul, ol { list-style: none; }
 @media (max-width: 768px) {
   /* Navbar mobile */
   .nav-toggle { display: flex; }
-  .corner-ctas { display: none; }
+  .nav-ctas { display: none; }
 
   .nav-links {
     position: fixed;
