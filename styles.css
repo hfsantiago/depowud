@@ -1319,6 +1319,198 @@ ul, ol { list-style: none; }
   color: var(--text-soft);
 }
 
+.pcard-especies-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: .75rem;
+  padding: .45rem 1rem;
+  border: 1.5px solid #C9952A;
+  border-radius: 999px;
+  color: #C9952A;
+  font-family: var(--font-title);
+  font-size: .78rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  transition: background .2s, color .2s;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.pcard-especies-btn:hover {
+  background: #C9952A;
+  color: #fff;
+}
+
+/* ── Modal Especies ──────────────────────────────────── */
+.especies-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,24,14,.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s ease, visibility .35s;
+}
+.especies-backdrop.open { opacity: 1; visibility: visible; }
+
+.especies-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1201;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  perspective: 1200px;
+  transition: opacity .35s ease, visibility .35s;
+}
+.especies-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.especies-panel {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 32px 80px rgba(0,0,0,.28), 0 8px 24px rgba(0,0,0,.12);
+  padding: 2.25rem 2.5rem 2.5rem;
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  transform: scale(.82) translateY(32px) rotateX(8deg);
+  transform-origin: 50% 30%;
+  transform-style: preserve-3d;
+  transition: transform .45s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+.especies-overlay.open .especies-panel {
+  transform: scale(1) translateY(0) rotateX(0deg);
+}
+
+.especies-close {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #f2f4f2;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.especies-close:hover { background: #1e4d2b; color: #fff; }
+
+.especies-header { margin-bottom: 1.75rem; }
+.especies-kicker {
+  font-family: var(--font-title);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #C9952A;
+  margin-bottom: .35rem;
+}
+.especies-title {
+  font-family: var(--font-title);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #1a3320;
+  margin: 0 0 .4rem;
+}
+.especies-sub {
+  font-size: .88rem;
+  color: #5a6b5c;
+  margin: 0;
+}
+
+.especies-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.especie-card {
+  background: #f8faf8;
+  border: 1.5px solid #e2ebe3;
+  border-radius: 14px;
+  padding: 1.1rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  transition: box-shadow .25s, border-color .25s, transform .25s cubic-bezier(.22,.61,.36,1);
+}
+.especie-card:hover {
+  border-color: #1e4d2b;
+  box-shadow: 0 8px 28px rgba(30,77,43,.14);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.especie-card-top {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+}
+.especie-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid rgba(0,0,0,.08);
+}
+.especie-name {
+  font-family: var(--font-title);
+  font-size: .95rem;
+  font-weight: 700;
+  color: #1a3320;
+  margin: 0 0 .1rem;
+  line-height: 1.2;
+}
+.especie-sci {
+  font-size: .72rem;
+  color: #7a9a7e;
+  font-style: italic;
+  margin: 0;
+}
+
+.especie-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .3rem .6rem;
+  margin: 0;
+  font-size: .77rem;
+  line-height: 1.4;
+}
+.especie-specs dt {
+  font-weight: 600;
+  color: #3d5c42;
+  white-space: nowrap;
+}
+.especie-specs dd {
+  color: #4a5e4d;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .especies-cards { grid-template-columns: repeat(2, 1fr); }
+  .especies-panel { padding: 1.75rem 1.5rem 2rem; }
+}
+@media (max-width: 560px) {
+  .especies-cards { grid-template-columns: 1fr; }
+  .especies-panel { padding: 1.5rem 1.1rem 1.75rem; }
+}
+
 .pcard-features li::before {
   content: '';
   flex-shrink: 0;

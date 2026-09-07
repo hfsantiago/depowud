@@ -85,28 +85,6 @@
     </div>
   </nav>
 
-  <!-- ===== MODAL BROCHURE ===== -->
-  <div class="modal-overlay" id="brochureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-box">
-      <div class="modal-header">
-        <span id="modalTitle">Brochure Deepowud</span>
-        <div class="modal-actions">
-          <a href="assets/docs/brochure.pdf" download="Brochure_Deepowud.pdf" class="btn-download">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Descargar PDF
-          </a>
-          <button class="modal-close" id="closeModal" aria-label="Cerrar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
-      <div class="modal-body">
-        <iframe id="brochureFrame" src="" title="Brochure Deepowud" class="pdf-viewer"></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="modal-backdrop" id="modalBackdrop"></div>
-
   <!-- ===== HERO ===== -->
   <section class="hero" id="inicio" aria-label="Inicio">
     <div class="hero-img">
@@ -203,6 +181,10 @@
                 <li>Opciones nuevas y reparadas</li>
                 <li>Múltiples especies disponibles</li>
               </ul>
+              <button type="button" class="pcard-especies-btn" id="openEspeciesBtn">
+                Ver especies disponibles
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
             </div>
           </div>
           <!-- Huacales -->
@@ -889,7 +871,7 @@
           </a>
         </div>
         <p class="footer-contact-info">
-          <a href="mailto:contacto@deepowud.com">contacto@deepowud.com</a>
+          <a href="mailto:contacto@depowud.com">contacto@depowud.com</a>
         </p>
       </div>
 
@@ -975,7 +957,7 @@
 
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>© 2026 Deepowud. Todos los derechos reservados.</p>
+        <p>© 2026 E. M Deepowud. Todos los derechos reservados.</p>
         <p><button id="openPoliticaBtn" class="footer-link-btn">Política de Datos</button></p>
       </div>
     </div>
@@ -1095,6 +1077,130 @@
       if (backdrop) backdrop.addEventListener('click', closeModal);
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
+
+  <!-- ── Modal Especies ──────────────────────────────── -->
+  <div class="especies-backdrop" id="especiesBackdrop"></div>
+  <div class="especies-overlay" id="especiesOverlay" role="dialog" aria-modal="true" aria-label="Especies disponibles">
+    <div class="especies-panel">
+      <button class="especies-close" id="closeEspecies" aria-label="Cerrar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="especies-header">
+        <p class="especies-kicker">Estibas &amp; Pallets</p>
+        <h3 class="especies-title">Especies disponibles</h3>
+        <p class="especies-sub">Trabajamos con madera certificada y trazable de las siguientes especies.</p>
+      </div>
+      <div class="especies-cards">
+
+        <!-- Melina -->
+        <div class="especie-card">
+          <div class="especie-card-top">
+            <span class="especie-dot" style="background:#d4b97a"></span>
+            <div>
+              <h4 class="especie-name">Melina</h4>
+              <p class="especie-sci">Gmelina arborea</p>
+            </div>
+          </div>
+          <dl class="especie-specs">
+            <dt>Densidad</dt><dd>450–530 kg/m³</dd>
+            <dt>Color</dt><dd>Amarillo crema a gris claro</dd>
+            <dt>Trabajabilidad</dt><dd>Muy fácil</dd>
+            <dt>Secado</dt><dd>Rápido y uniforme</dd>
+            <dt>Usos</dt><dd>Estibas y embalajes ligeros</dd>
+            <dt>Humedad</dt><dd>Verde / Seca bajo solicitud (18–25%)</dd>
+          </dl>
+        </div>
+
+        <!-- Campano -->
+        <div class="especie-card">
+          <div class="especie-card-top">
+            <span class="especie-dot" style="background:#8b5c2a"></span>
+            <div>
+              <h4 class="especie-name">Campano / Saman</h4>
+              <p class="especie-sci">Samanea saman</p>
+            </div>
+          </div>
+          <dl class="especie-specs">
+            <dt>Densidad</dt><dd>550–650 kg/m³</dd>
+            <dt>Color</dt><dd>Castaño oscuro con vetas pronunciadas</dd>
+            <dt>Trabajabilidad</dt><dd>Media</dd>
+            <dt>Secado</dt><dd>Moderado</dd>
+            <dt>Durabilidad</dt><dd>Buena resistencia a hongos e insectos</dd>
+            <dt>Usos</dt><dd>Estibas, chazas, construcción general</dd>
+            <dt>Humedad</dt><dd>Verde / Seca bajo solicitud (18–25%)</dd>
+          </dl>
+        </div>
+
+        <!-- Moho -->
+        <div class="especie-card">
+          <div class="especie-card-top">
+            <span class="especie-dot" style="background:#c9906b"></span>
+            <div>
+              <h4 class="especie-name">Moho / Vara de humo</h4>
+              <p class="especie-sci">Cordia alliodora</p>
+            </div>
+          </div>
+          <dl class="especie-specs">
+            <dt>Densidad</dt><dd>500–580 kg/m³</dd>
+            <dt>Color</dt><dd>Castaño amarillento a rosado</dd>
+            <dt>Trabajabilidad</dt><dd>Fácil</dd>
+            <dt>Secado</dt><dd>Moderado</dd>
+            <dt>Durabilidad</dt><dd>Media</dd>
+            <dt>Usos</dt><dd>Estibas, encofrados, cerramientos</dd>
+            <dt>Humedad</dt><dd>Verde / Seca bajo solicitud (18–25%)</dd>
+          </dl>
+        </div>
+
+        <!-- Pino -->
+        <div class="especie-card">
+          <div class="especie-card-top">
+            <span class="especie-dot" style="background:#f0e6b0"></span>
+            <div>
+              <h4 class="especie-name">Pino Ocarpa</h4>
+              <p class="especie-sci">Pinus oocarpa</p>
+            </div>
+          </div>
+          <dl class="especie-specs">
+            <dt>Densidad</dt><dd>550–650 kg/m³</dd>
+            <dt>Color</dt><dd>Amarillo pálido a blanco cremoso</dd>
+            <dt>Trabajabilidad</dt><dd>Muy fácil</dd>
+            <dt>Secado</dt><dd>Rápido y uniforme</dd>
+            <dt>Durabilidad</dt><dd>Media</dd>
+            <dt>Usos</dt><dd>Estibas para exportación, embalajes ligeros</dd>
+            <dt>Humedad</dt><dd>Verde / Seca bajo solicitud (18–25%)</dd>
+          </dl>
+        </div>
+
+      </div><!-- /.especies-cards -->
+    </div><!-- /.especies-panel -->
+  </div><!-- /.especies-overlay -->
+
+  <script>
+    (function() {
+      var openBtn   = document.getElementById('openEspeciesBtn');
+      var overlay   = document.getElementById('especiesOverlay');
+      var backdrop  = document.getElementById('especiesBackdrop');
+      var closeBtn  = document.getElementById('closeEspecies');
+
+      function openEspecies() {
+        overlay.classList.add('open');
+        backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeEspecies() {
+        overlay.classList.remove('open');
+        backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      openBtn.addEventListener('click', openEspecies);
+      closeBtn.addEventListener('click', closeEspecies);
+      backdrop.addEventListener('click', closeEspecies);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeEspecies();
       });
     })();
   </script>
