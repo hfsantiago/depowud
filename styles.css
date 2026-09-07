@@ -1327,7 +1327,8 @@ ul, ol { list-style: none; }
 .pcard-especies-label {
   font-size: .74rem;
   color: var(--text-soft);
-  margin-top: .2rem;
+  margin-top: auto;
+  padding-top: .5rem;
 }
 .pcard-especies-label span {
   font-weight: 600;
