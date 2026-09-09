@@ -337,6 +337,15 @@
 
       function sendForm(ip) {
         saveConsent(ip);
+        var SHEETS_URL = "https://script.google.com/macros/s/AKfycbw5NpITxVwSqaG-yW7gveouFAN9EZ9rkHvbev_cCOkppG6AQsXbJ-5tVADsUrmmZUlTDQ/exec";
+        /* Enviar a Google Sheets (sin esperar respuesta para no bloquear) */
+        fetch(SHEETS_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+          mode: "no-cors"
+        }).catch(function() {});
+        /* Enviar a Formsubmit (correo) */
         fetch("https://formsubmit.co/ajax/contacto@maderasdepowud.com", {
           method: "POST",
           headers: { "Content-Type": "application/json", "Accept": "application/json" },
