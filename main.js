@@ -337,7 +337,7 @@
 
       function sendForm(ip) {
         saveConsent(ip);
-        fetch("https://formsubmit.co/ajax/contacto@depowud.com", {
+        fetch("https://formsubmit.co/ajax/contacto@maderasdepowud.com", {
           method: "POST",
           headers: { "Content-Type": "application/json", "Accept": "application/json" },
           body: JSON.stringify(formData)
